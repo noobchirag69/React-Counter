@@ -1,6 +1,7 @@
 // Hooks
 import { useState } from 'react';
 import { Button } from './components/Button';
+import './style.css';
 
 const App = () => {
   // Initiating State with initial value 0
@@ -26,23 +27,18 @@ const App = () => {
         boxShadow: "0 3px 15px #777"
       }}
     >
-      <h1 
+      <h1
         style={{
+          fontFamily: "'Segoe UI', sans-serif",
           textAlign: "center",
           marginBottom: "20px"
         }}
       >
         React Counter
       </h1>
-      <Button 
-        count={count} 
+      <Button
+        count={count}
         onClick={handleClick}
-        style={{
-          padding: "5px 15px",
-          margin: "10px auto",
-          cursor: "pointer",
-          border: "none"
-        }}
       />
     </div >
   );
